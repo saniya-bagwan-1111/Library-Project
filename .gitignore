@@ -1,0 +1,17 @@
+# Eclipse internal files
+.metadata/
+.recommenders/
+bin/
+*.class
+
+# Java/Maven build files
+target/
+
+# Node/React files
+node_modules/
+npm-debug.log
+build/
+
+# OS files
+.DS_Store
+Thumbs.db
