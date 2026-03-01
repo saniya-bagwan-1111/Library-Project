@@ -4,12 +4,14 @@ import { Navbar } from './layouts/NavbarAndFooter/Navbar';
 import { ExploreTopBook } from './layouts/HomePage/Components/ExploreTopBook';
 import { Footer } from './layouts/NavbarAndFooter/Footer';
 import { HomePage } from './layouts/HomePage/HomePage';
+import { SearchBooksPage } from './layouts/SearchBooksPage/SearchBooksPage';
 
 function App() {
   return (
     <div>
       <Navbar/>
-      <HomePage/>
+      {/* <HomePage/> */}
+      <SearchBooksPage/>
       <Footer/>
     </div>
   );
