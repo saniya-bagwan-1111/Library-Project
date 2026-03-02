@@ -3,6 +3,7 @@ import { ReturnBook } from "../Components/ReturnBook";
 import BookModel from "../../../models/BookModel";
 import { error } from "console";
 import { SpinnerLoading } from "../../Utils/SpinnerLoading";
+import { Link } from "react-router-dom";
 
 export const Carousel = () => {
     const [books,setBooks]=useState<BookModel[]>([]);
@@ -119,13 +120,13 @@ export const Carousel = () => {
             <div className="d-lg-none mt-3">
                 <div className="row d-flex justify-content-center align-items-center">
                 {
-                    <ReturnBook book={books[7]} key={books[7].id}></ReturnBook>
+                    <ReturnBook book={books[0]} key={books[0].id}></ReturnBook>
                 }
                 
             </div>
             </div>
             <div className="homepage-carousel-title mt-3">
-                <a href="#" className="btn btn-outline-secondary btn-lg">View More</a>
+                <Link to="/search" className="btn btn-outline-secondary btn-lg">View More</Link>
             </div>
         </div>
 
